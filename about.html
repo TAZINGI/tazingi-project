@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCanada Scholarship Portal - About Programs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-red-500 selection:text-white">
+
+    <!-- Responsive Navigation Header -->
+    <header class="bg-red-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="p-2 bg-white/10 rounded-xl group-hover:bg-white/20 transition duration-300">
+                    <i data-lucide="graduation-cap" class="w-8 h-8 text-yellow-300"></i>
+                </div>
+                <span class="font-extrabold text-2xl tracking-tight">EduCanada<span class="text-yellow-300">Portal</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="index.html" class="text-red-100 hover:text-white transition py-1">Home</a>
+                <a href="about.html" class="text-yellow-300 font-bold border-b-2 border-yellow-300 py-1">About Programs</a>
+                <a href="branches.html" class="text-red-100 hover:text-white transition py-1">Branches</a>
+                <a href="apply.html" class="bg-yellow-400 text-red-950 px-5 py-2.5 rounded-xl font-bold hover:bg-yellow-300 shadow-md hover:shadow-yellow-400/20 transition transform hover:-translate-y-0.5 duration-200">
+                    Apply Now
+                </a>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" onclick="toggleMobileMenu()" type="button" aria-label="Toggle navigation" class="md:hidden p-2 rounded-lg bg-red-800 text-white hover:bg-red-900 focus:outline-none transition">
+                <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 border-t border-red-600 px-4 pt-3 pb-6 space-y-3">
+            <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-white hover:bg-red-700 transition flex items-center gap-2">
+                <i data-lucide="home" class="w-4 h-4 text-yellow-300"></i> Home
+            </a>
+            <a href="about.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-white bg-red-700 flex items-center gap-2">
+                <i data-lucide="info" class="w-4 h-4 text-yellow-300"></i> About Programs
+            </a>
+            <a href="branches.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-white hover:bg-red-700 transition flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-yellow-300"></i> Branches
+            </a>
+            <a href="apply.html" class="block px-3 py-2.5 rounded-lg text-sm font-bold bg-yellow-400 text-red-950 hover:bg-yellow-300 transition text-center mt-2 shadow">
+                Apply Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-r from-red-900/90 via-red-800/80 to-slate-900/90 text-white py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1600" alt="Students studying together abroad" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-25" />
+            
+            <div class="relative max-w-4xl mx-auto text-center space-y-4">
+                <span class="bg-red-800/80 border border-red-500/40 text-yellow-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider inline-block">
+                    Empowering Global Education
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">About EduCanada Scholarship Programs</h1>
+                <p class="text-base sm:text-lg text-red-100/90 max-w-2xl mx-auto">
+                    Learn about our mission, eligibility criteria, and how we empower international students from Africa and around the globe.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission & Details -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+            
+            <!-- Overview Card with African and White Students Image -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-gray-200">
+                <div class="space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-100 px-3 py-1 rounded-full">Our Mission</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Bridging Nations Through Academic Excellence</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        The EduCanada Scholarship Portal connects exceptional international candidates—particularly from across Africa, Asia, and Latin America—with funding opportunities provided by top Canadian universities.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Whether you are pursuing Undergraduate studies, Master's degree research, or Doctoral fellowships, our comprehensive packages help turn your ambition into real-world achievement.
+                    </p>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <!-- Photo featuring Black/African and Caucasian students studying together abroad -->
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1000" alt="African and white international students studying abroad" class="w-full h-80 object-cover" />
+                </div>
+            </div>
+
+            <!-- Program Coverage Grid -->
+            <div>
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-2xl font-extrabold text-gray-900">What Our Scholarships Cover</h2>
+                    <p class="text-gray-600 text-sm mt-1">Our comprehensive financial support packages are tailored for full peace of mind.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 bg-red-100 text-red-700 rounded-lg flex items-center justify-center font-bold">
+                            <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900">100% Tuition Fees</h3>
+                        <p class="text-xs text-gray-600">Full coverage of university tuition for the entire duration of your program.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 bg-red-100 text-red-700 rounded-lg flex items-center justify-center font-bold">
+                            <i data-lucide="home" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900">Housing Allowance</h3>
+                        <p class="text-xs text-gray-600">Monthly stipends to assist with campus accommodation or off-campus living expenses.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 bg-red-100 text-red-700 rounded-lg flex items-center justify-center font-bold">
+                            <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900">Health Insurance</h3>
+                        <p class="text-xs text-gray-600">Comprehensive medical and health insurance throughout your study period in Canada.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 bg-red-100 text-red-700 rounded-lg flex items-center justify-center font-bold">
+                            <i data-lucide="plane" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900">Travel Grants</h3>
+                        <p class="text-xs text-gray-600">Annual travel subsidies for international relocation and academic conferences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section with Image Overlay -->
+            <div class="relative bg-gradient-to-r from-red-800 to-red-900 text-white rounded-2xl p-8 sm:p-12 shadow-lg space-y-4 overflow-hidden text-center">
+                <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1200" alt="Students celebrating graduation abroad" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-20" />
+                <div class="relative z-10 space-y-4">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Ready to Start Your Canadian Journey?</h3>
+                    <p class="text-xs sm:text-sm text-red-100 max-w-lg mx-auto">
+                        Applications for the upcoming cycle are open. Submit your details today to be considered for our scholarship cohort.
+                    </p>
+                    <div>
+                        <a href="apply.html" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-red-950 font-extrabold text-sm px-8 py-3.5 rounded-xl shadow transition">
+                            Apply for Scholarship
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-gray-400 text-xs py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-yellow-400"></i>
+                <span class="font-bold text-sm text-white">EduCanada Portal</span>
+            </div>
+            <p>© 2026 EduCanada Scholarship Portal. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="branches.html" class="hover:text-white transition">Branches</a>
+                <a href="apply.html" class="hover:text-white transition">Apply</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

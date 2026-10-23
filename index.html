@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCanada Scholarship Portal - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-red-500 selection:text-white">
+
+    <!-- Responsive Navigation Header -->
+    <header class="bg-red-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="p-2 bg-white/10 rounded-xl group-hover:bg-white/20 transition duration-300">
+                    <i data-lucide="graduation-cap" class="w-8 h-8 text-yellow-300"></i>
+                </div>
+                <span class="font-extrabold text-2xl tracking-tight">EduCanada<span class="text-yellow-300">Portal</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="index.html" class="text-yellow-300 font-bold border-b-2 border-yellow-300 py-1">Home</a>
+                <a href="about.html" class="text-red-100 hover:text-white transition py-1">About Programs</a>
+                <a href="branches.html" class="text-red-100 hover:text-white transition py-1">Branches</a>
+                <a href="apply.html" class="bg-yellow-400 text-red-950 px-5 py-2.5 rounded-xl font-bold hover:bg-yellow-300 shadow-md hover:shadow-yellow-400/20 transition transform hover:-translate-y-0.5 duration-200">
+                    Apply Now
+                </a>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" onclick="toggleMobileMenu()" type="button" aria-label="Toggle navigation" class="md:hidden p-2 rounded-lg bg-red-800 text-white hover:bg-red-900 focus:outline-none transition">
+                <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 border-t border-red-600 px-4 pt-3 pb-6 space-y-3">
+            <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-white bg-red-700 flex items-center gap-2">
+                <i data-lucide="home" class="w-4 h-4 text-yellow-300"></i> Home
+            </a>
+            <a href="about.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-white hover:bg-red-700 transition flex items-center gap-2">
+                <i data-lucide="info" class="w-4 h-4 text-yellow-300"></i> About Programs
+            </a>
+            <a href="branches.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-white hover:bg-red-700 transition flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-yellow-300"></i> Branches
+            </a>
+            <a href="apply.html" class="block px-3 py-2.5 rounded-lg text-sm font-bold bg-yellow-400 text-red-950 hover:bg-yellow-300 transition text-center mt-2 shadow">
+                Apply Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Banner with Brief Overview -->
+        <section class="relative bg-gradient-to-r from-red-900/95 via-red-800/90 to-slate-900/95 text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1600" alt="Students studying abroad" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-25" />
+            
+            <div class="relative max-w-5xl mx-auto text-center space-y-6">
+                <!-- Free Application Notice Banner -->
+                <div class="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+                    Notice: Application is 100% Free of Charge
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">EduCanada International Student Offerings</h1>
+                
+                <!-- Short Description of What EduCanada Offers -->
+                <p class="text-sm sm:text-base text-red-100/90 max-w-3xl mx-auto font-medium leading-relaxed">
+                    EduCanada offers fully funded academic grants, tuition coverage, health insurance, and monthly living allowances to outstanding international scholars pursuing Undergraduate, Master’s, and PhD degree programs across premier Canadian partner institutions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Grants & Total Fund Allocations Table/Cards -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-100 px-3 py-1 rounded-full">Funding Pools</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-3">2026/2027 Available Scholarship Grants</h2>
+                <p class="text-xs sm:text-sm text-gray-500 mt-2">Explore active funding programs and their total allocated budgets.</p>
+            </div>
+
+            <!-- Grants Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-red-50 text-red-700 p-2.5 rounded-xl"><i data-lucide="award" class="w-6 h-6"></i></span>
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">Active Pool</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg">EduCanada Global Leadership Award</h3>
+                        <p class="text-xs text-gray-500 mt-2">For high-achieving undergraduate candidates entering STEM and Social Sciences.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-400 font-medium">Total Grant Fund</span>
+                        <span class="text-base font-extrabold text-red-700">CAD $15,000,000</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-red-50 text-red-700 p-2.5 rounded-xl"><i data-lucide="book-open" class="w-6 h-6"></i></span>
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">Active Pool</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg">Postgraduate Excellence Fellowship</h3>
+                        <p class="text-xs text-gray-500 mt-2">Covers tuition and research stipends for Master's degree researchers.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-400 font-medium">Total Grant Fund</span>
+                        <span class="text-base font-extrabold text-red-700">CAD $22,500,000</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-red-50 text-red-700 p-2.5 rounded-xl"><i data-lucide="microscope" class="w-6 h-6"></i></span>
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">Active Pool</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg">Vanier Canada Doctoral Grant</h3>
+                        <p class="text-xs text-gray-500 mt-2">High-level research funding and full residency coverage for PhD scholars.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-400 font-medium">Total Grant Fund</span>
+                        <span class="text-base font-extrabold text-red-700">CAD $30,000,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Diversity Section -->
+            <div class="bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-100 px-3 py-1 rounded-full">Global Student Diversity</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">A Welcoming Campus for Students Worldwide</h2>
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        Join thousands of African scholars and international students thriving in world-class Canadian universities. Our scholarship programs foster cultural exchange, inclusion, and academic excellence across all disciplines.
+                    </p>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&q=80&w=1000" alt="African and international students studying together abroad" class="w-full h-64 sm:h-80 object-cover" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Application Banner Section -->
+        <section class="bg-gradient-to-br from-red-800 to-red-950 text-white py-16 px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="inline-flex items-center gap-2 bg-yellow-400/20 text-yellow-300 border border-yellow-300/30 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> No Fee Required • 100% Free Application
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to Begin Your Canadian Journey?</h2>
+                <p class="text-sm sm:text-base text-red-100/90 font-medium max-w-xl mx-auto">
+                    Submit your application today for the 2026/2027 academic session. Applications take less than 10 minutes to complete.
+                </p>
+                <div class="pt-4">
+                    <a href="apply.html" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-yellow-400 text-red-950 font-extrabold text-base px-10 py-4 rounded-xl shadow-xl hover:bg-yellow-300 transition transform hover:-translate-y-0.5">
+                        <i data-lucide="file-text" class="w-5 h-5"></i> Start Your Application Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-gray-400 text-xs py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-yellow-400"></i>
+                <span class="font-bold text-sm text-white">EduCanada Portal</span>
+            </div>
+            <p>© 2026 EduCanada Scholarship Portal. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="branches.html" class="hover:text-white transition">Branches</a>
+                <a href="apply.html" class="hover:text-white transition">Apply</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
